@@ -1,0 +1,42 @@
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+  padding: var(--gap-xl);
+}
+
+.report-form .fields {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  gap: var(--gap-sm);
+  align-items: center;
+}
+
+.report-form select {
+  grid-column: span 2;
+}
+
+.report-form label:not(.secondary) {
+  grid-column: 1;
+}
+
+.report-form label.secondary {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.report-form label.secondary + .secondary {
+  grid-column: 3;
+}
+
+.report-form h1 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-default);
+  margin: 0
+}
+
+.report-form label.required::after {  
+  content: '*';
+  color: var(--color-error);
+}

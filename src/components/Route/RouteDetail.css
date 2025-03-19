@@ -1,0 +1,35 @@
+.route-detail {
+  display: flex;
+  justify-content: center;
+}
+
+.route-detail dl {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.route-detail dt,
+.route-detail dd {
+  text-align: center;
+  padding: 0 var(--gap-lg);
+  margin: 0;
+}
+
+.route-detail dt,
+.route-detail dd {
+  border-right: 1px solid var(--color-divider);
+}
+
+.route-detail dt:last-of-type, 
+.route-detail dd:last-of-type {
+  border-right: none;
+}
+
+.route-detail dt {
+  grid-row: 2;
+}
+
+.route-detail dd {
+  font-size: var(--font-size-xl);
+  grid-row: 1;
+}

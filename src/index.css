@@ -1,0 +1,71 @@
+:root {
+
+  --color-bg: #FAFAFA;
+  --color-bg-muted: #F4F4F4;
+  --color-bg-light: #FFFFFF;
+  --color-fg: #384045;
+  --color-fg-muted: #797F82;
+  --color-primary: #98CA02;
+  --color-primary-invert: var(--color-bg-light);
+  --color-error: #FF4141;
+  --color-border: #DCDEE0;
+  --color-divider: #DBDBDB;
+  --color-icon: var(--color-fg-muted);
+
+  --input-height: 2rem;
+  --input-radius: 3px;
+
+  --gap-xl: 2rem;
+  --gap-lg: 1.625rem;
+  --gap-md: 1.25rem;
+  --gap-sm: 1rem;
+  --gap-xs: 8px;
+
+  --font-size-xl: 1.875rem;
+  --font-size-lg: 1.5rem;
+  --font-size-md: 0.875rem;
+  --font-family-default: MuseoSans, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-weight-default: 400;
+
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  font-family: var(--font-family-default);
+  line-height: 1.5;
+  font-weight: var(--font-weight-default);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input, button, select {
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-md);
+  height: var(--input-height);
+  border: none;
+  border-radius: var(--input-radius);
+  padding: 0 var(--gap-xs);
+}
+
+input, select {
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+}
+
+button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--input-radius);
+  color: var(--color-primary-invert);
+  text-transform: uppercase;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
